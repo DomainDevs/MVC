@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<span>@ViewBag.Nombre</span>
+<hr>
+<span>@ViewData["Apellido"]</span>
+<hr>
+<span>@TempData["Usuario"]</span>
+<hr>
+<ul>
+    @foreach (var Fruta in (List<string>)ViewData["Frutas"])
+    {
+        <li>@Fruta</li>
+    }
+</ul>
+
+<ul>
+    @foreach (var Fruta in @ViewBag.Frutas)
+    {
+        <li>@Fruta</li>
+    }
+</ul>
+
+<ul>
+    @foreach (var Fruta in (List<string>)TempData["Frutas"])
+    {
+        <li>@Fruta</li>
+    }
+</ul>

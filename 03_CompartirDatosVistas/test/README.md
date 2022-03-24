@@ -1,0 +1,3 @@
+- ViewBag.Nombre : Es una calse de tipo de dato dinámico, suministramos el nombre de la variable y la creara con ese nombre.
+- ViewData["Nombre"] : Es un array asociativo, este es más rapido que ViewBag.
+- TempData["Nombre"] : Es un array asociativo, se mantiene activa de una petición a otra. Se suele usar para guardar variables de sesion en aplicaciones web multiusuarios.
